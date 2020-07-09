@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">ClearClipboard</string>
+    <string name="app_name">Clear Clipboard Cat</string>
     <string name="clipboardDeleted">Clipboard deleted!</string>
     <string name="unicodeCat">🐈</string>
 </resources>

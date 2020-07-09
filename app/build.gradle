@@ -5,11 +5,11 @@ android {
     buildToolsVersion "29.0.3"
 
     defaultConfig {
-        applicationId "com.amnesica.clearclipboard"
+        applicationId "com.amnesica.clearclipboardcat"
         minSdkVersion 28
         targetSdkVersion 29
         versionCode 1
-        versionName "1.0.D"
+        versionName "1.0.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
