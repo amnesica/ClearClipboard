@@ -22,6 +22,6 @@ coming soon
 
 ## Special
 * no advertising
-* no permissions
+* no permissions needed
 
 If you have any comments, please let me know.
