@@ -1,12 +1,12 @@
 # ClearClipboard
 
-![GitHub version](https://d25lcipzij17d.cloudfront.net/badge.svg?id=gh&type=6&v=1.0.0&x2=0)
+![GitHub version](https://d25lcipzij17d.cloudfront.net/badge.svg?id=gh&type=6&v=1.0.1&x2=0)
 
 <img alt="Logo" src="/static/logo/logo.png"/>
 
 The app is a quick way to clear the content of the clipboard with just one tap on the icon.
 
-**Note**: Only the current content of the clipboard is cleared, this app has no effect on other apps which manage your clipboard. This app does not work with Samsung devices!
+**Note**: Only the current content of the clipboard is cleared, this app has no effect on other apps which manage your clipboard. This app does not work with Samsung or Google Pixel devices!
 
 ## Screenshots
 <div style="display:flex;">
