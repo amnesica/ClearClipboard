@@ -11,10 +11,10 @@ public class MainActivity extends Activity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        //start service
+        // start service
         startService(new Intent(this, ClipboardService.class));
 
-        //finish activity immediately
+        // finish activity immediately
         finish();
     }
 }

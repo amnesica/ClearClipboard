@@ -2,4 +2,5 @@
     <string name="app_name">Clear Clipboard</string>
     <string name="clipboardDeleted">Clipboard deleted!</string>
     <string name="unicodeCat">🐈</string>
+    <string name="clipboardDeletedNotSuccessful">Deletion of clipboard contents not successful</string>
 </resources>
