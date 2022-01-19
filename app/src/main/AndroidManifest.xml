@@ -9,16 +9,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@android:style/Theme.Translucent.NoTitleBar">
-        <activity android:name=".MainActivity">
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <service android:name=".ClipboardService"
+        <service
+            android:name=".ClipboardService"
             android:exported="false">
             <intent-filter>
-                <action android:name="my.service.intent"/>
+                <action android:name="my.service.intent" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </service>
