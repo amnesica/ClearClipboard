@@ -20,6 +20,7 @@ The app is a quick way to clear the content of the clipboard with just one tap o
 * Clear the clipboard with one tap
 
 ## Download
+<a href='https://android.izzysoft.de/repo/apk/com.amnesica.clearclipboard'><img alt='Get it on IzzyOnDroid' src='https://gitlab.com/IzzyOnDroid/repo/-/raw/master/assets/IzzyOnDroid.png' height='60'/></a>
 <a href='https://play.google.com/store/apps/details?id=com.amnesica.clearclipboard&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png' height='60'/></a>
 
 ## Special
