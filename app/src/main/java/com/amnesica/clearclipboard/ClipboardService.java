@@ -7,6 +7,7 @@ import android.content.Intent;
 import android.os.Handler;
 import android.os.IBinder;
 import android.os.Looper;
+import android.util.Log;
 import android.widget.Toast;
 
 import androidx.annotation.Nullable;
@@ -17,57 +18,59 @@ public class ClipboardService extends Service {
 
   @Override
   public void onCreate() {
-    // Handler will get associated with the current thread,
-    // which is the main thread.
     handler = new Handler(Looper.getMainLooper());
     super.onCreate();
 
-    // get clipboard manager
+    clearClipboard();
+
+    // stop service
+    this.stopSelf();
+  }
+
+  private void clearClipboard() {
     ClipboardManager clipboardManager =
         (ClipboardManager) getSystemService(Context.CLIPBOARD_SERVICE);
 
-    // check if clipboard manager is not null
     if (clipboardManager != null) {
-
-      // try to clear clipboard when clipboardManager
       try {
         clipboardManager.clearPrimaryClip();
-
-        // show toast on UI thread that clearing
-        // clipboard content was successful
-        runOnUiThread(
-            new Runnable() {
-              @Override
-              public void run() {
-                Toast.makeText(
-                        getApplicationContext(),
-                        getApplication().getResources().getString(R.string.clipboardDeleted)
-                            + getApplication().getResources().getString(R.string.unicodeCat),
-                        Toast.LENGTH_SHORT)
-                    .show();
-              }
-            });
+        showToastClearingClipboardWasSuccessful();
       } catch (Exception e) {
-        // show toast on UI thread that clearing
-        // clipboard content was not successful
-        runOnUiThread(
-            new Runnable() {
-              @Override
-              public void run() {
-                Toast.makeText(
-                        getApplicationContext(),
-                        getApplication()
-                            .getResources()
-                            .getString(R.string.clipboardDeletedNotSuccessful),
-                        Toast.LENGTH_SHORT)
-                    .show();
-              }
-            });
+        Log.d(ClipboardService.class.getSimpleName(), String.valueOf(e));
+        showToastClearingClipboardFailed();
       }
     }
+  }
 
-    // stop Service
-    this.stopSelf();
+  private void showToastClearingClipboardWasSuccessful() {
+    runOnUiThread(
+        new Runnable() {
+          @Override
+          public void run() {
+            Toast.makeText(
+                    getApplicationContext(),
+                    getApplication().getResources().getString(R.string.clipboardDeleted)
+                        + getApplication().getResources().getString(R.string.unicodeCactus),
+                    Toast.LENGTH_SHORT)
+                .show();
+          }
+        });
+  }
+
+  private void showToastClearingClipboardFailed() {
+    runOnUiThread(
+        new Runnable() {
+          @Override
+          public void run() {
+            Toast.makeText(
+                    getApplicationContext(),
+                    getApplication()
+                        .getResources()
+                        .getString(R.string.clipboardDeletedNotSuccessful),
+                    Toast.LENGTH_SHORT)
+                .show();
+          }
+        });
   }
 
   private void runOnUiThread(Runnable runnable) {
