@@ -4,7 +4,7 @@
 
 <h1 align="center">ClearClipboard</h1>
 
-![GitHub version](https://d25lcipzij17d.cloudfront.net/badge.svg?id=gh&type=6&v=1.0.2&x2=0)
+![GitHub version](https://d25lcipzij17d.cloudfront.net/badge.svg?id=gh&type=6&v=1.0.3&x2=0)
 
 The app is a quick way to clear the content of the clipboard with just one tap on the icon.
 
