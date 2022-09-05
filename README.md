@@ -13,9 +13,9 @@ manage your clipboard. This app does not work with Samsung or Google Pixel devic
 
 ## Screenshots
 
-<div style="display:flex;">
-<img alt="App image" src="/static/screenshots/01.png" width="24%">
-<img alt="App image" src="/static/screenshots/02.png" width="24%">
+<div style="display:flex;" align="center">
+<img alt="App image" src="/static/screenshots/01.png" width="25%">
+<img alt="App image" src="/static/screenshots/02.png" width="25%">
 </div>
 
 ## Features
