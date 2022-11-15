@@ -25,6 +25,7 @@ manage your clipboard. This app does not work with Samsung or Google Pixel devic
 ## Download
 
 <a href='https://android.izzysoft.de/repo/apk/com.amnesica.clearclipboard'><img alt='Get it on IzzyOnDroid' src='https://gitlab.com/IzzyOnDroid/repo/-/raw/master/assets/IzzyOnDroid.png' height='60'/></a>
+<a href='https://github.com/amnesica/ClearClipboard/releases'><img alt='Get it on Github' src='https://github.com/amnesica/ClearClipboard/blob/3cf7d21a52f1a74504a3d5a2a75110399da01455/static/github/get-it-on-github.png' height='60'/></a>
 
 ## Special
 
