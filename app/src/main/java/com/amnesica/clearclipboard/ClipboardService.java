@@ -28,49 +28,24 @@ public class ClipboardService extends Service {
   }
 
   private void clearClipboard() {
-    ClipboardManager clipboardManager =
-        (ClipboardManager) getSystemService(Context.CLIPBOARD_SERVICE);
+    ClipboardManager clipboardManager = (ClipboardManager) getSystemService(Context.CLIPBOARD_SERVICE);
+    if (clipboardManager == null) return;
 
-    if (clipboardManager != null) {
-      try {
-        clipboardManager.clearPrimaryClip();
-        showToastClearingClipboardWasSuccessful();
-      } catch (Exception e) {
-        Log.d(ClipboardService.class.getSimpleName(), String.valueOf(e));
-        showToastClearingClipboardFailed();
-      }
+    try {
+      clipboardManager.clearPrimaryClip();
+      showToastClearingClipboardWasSuccessful();
+    } catch (Exception e) {
+      Log.d(ClipboardService.class.getSimpleName(), String.valueOf(e));
+      showToastClearingClipboardFailed();
     }
   }
 
   private void showToastClearingClipboardWasSuccessful() {
-    runOnUiThread(
-        new Runnable() {
-          @Override
-          public void run() {
-            Toast.makeText(
-                    getApplicationContext(),
-                    getApplication().getResources().getString(R.string.clipboardDeleted)
-                        + getApplication().getResources().getString(R.string.unicodeCactus),
-                    Toast.LENGTH_SHORT)
-                .show();
-          }
-        });
+    runOnUiThread(() -> Toast.makeText(getApplicationContext(), getApplication().getResources().getString(R.string.clipboardDeleted) + getApplication().getResources().getString(R.string.unicodeCactus), Toast.LENGTH_SHORT).show());
   }
 
   private void showToastClearingClipboardFailed() {
-    runOnUiThread(
-        new Runnable() {
-          @Override
-          public void run() {
-            Toast.makeText(
-                    getApplicationContext(),
-                    getApplication()
-                        .getResources()
-                        .getString(R.string.clipboardDeletedNotSuccessful),
-                    Toast.LENGTH_SHORT)
-                .show();
-          }
-        });
+    runOnUiThread(() -> Toast.makeText(getApplicationContext(), getApplication().getResources().getString(R.string.clipboardDeletedNotSuccessful), Toast.LENGTH_SHORT).show());
   }
 
   private void runOnUiThread(Runnable runnable) {
