@@ -1,0 +1,13 @@
+The app is a quick way to clear the content of the clipboard with just one tap on the icon.
+
+Note: Only the current content of the clipboard is cleared, this app has no effect on other apps which manage your clipboard. This app does not work with Samsung or Google Pixel devices!
+
+<b>Why ClearClipboard</b>
+During use, apps can read the clipboard content and use it for their purposes. This app allows manual deletion of the clipboard to protect your own data.
+
+<b>Features</b>
+* Clears the clipboard with one tap
+
+<b>Special</b>
+* no advertising
+* no permissions needed
