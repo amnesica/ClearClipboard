@@ -29,6 +29,7 @@ manual deletion of the clipboard to protect your own data.
 
 ## Download
 
+<a href='https://f-droid.org/packages/com.amnesica.clearclipboard/'><img alt='Get it on F-Droid' src='https://fdroid.gitlab.io/artwork/badge/get-it-on.png' height='60'/></a>
 <a href='https://android.izzysoft.de/repo/apk/com.amnesica.clearclipboard'><img alt='Get it on IzzyOnDroid' src='https://gitlab.com/IzzyOnDroid/repo/-/raw/master/assets/IzzyOnDroid.png' height='60'/></a>
 <a href='https://github.com/amnesica/ClearClipboard/releases'><img alt='Get it on Github' src='static/github/get-it-on-github.png' height='60'/></a>
 
