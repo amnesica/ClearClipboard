@@ -1,0 +1,6 @@
+<resources>
+  <string name="app_name">清除剪貼簿</string>
+  <string name="clipboardDeleted">剪貼簿已清除！</string>
+  <string name="unicodeCactus">🌵</string>
+  <string name="clipboardDeletedNotSuccessful">清除剪貼簿失敗</string>
+</resources>
