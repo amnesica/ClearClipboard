@@ -1,0 +1,3 @@
+* add dependencyInfo to build.gradle
+* add themed icon
+* upgrade dependencies
