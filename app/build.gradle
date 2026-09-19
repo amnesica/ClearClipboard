@@ -1,13 +1,13 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 33
+    compileSdkVersion 37
     buildToolsVersion "33.0.0"
 
     defaultConfig {
         applicationId "com.amnesica.clearclipboard"
         minSdkVersion 28
-        targetSdkVersion 33
+        targetSdkVersion 37
         versionCode 6
         versionName "1.0.5"
 
@@ -29,6 +29,7 @@ android {
         // Disables dependency metadata when building Android App Bundles (for Google Play)
         includeInBundle = false
     }
+    namespace 'com.amnesica.clearclipboard'
 }
 
 dependencies {
